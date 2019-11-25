@@ -10,6 +10,7 @@
 		163825322376A3BB00BAEA73 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163825312376A3BB00BAEA73 /* Utils.swift */; };
 		163825342376A46200BAEA73 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163825332376A46200BAEA73 /* Product.swift */; };
 		163825362376A4A900BAEA73 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163825352376A4A900BAEA73 /* Logger.swift */; };
+		163A31B7238BAF02002FA253 /* ChageRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163A31B6238BAF02002FA253 /* ChageRecord.swift */; };
 		16BFD44623794EA500C05B67 /* NetworkConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BFD44523794EA500C05B67 /* NetworkConnection.swift */; };
 		16BFD44823794F6D00C05B67 /* NetworkPool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BFD44723794F6D00C05B67 /* NetworkPool.swift */; };
 		16BFD44A2379530C00C05B67 /* ProductDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BFD4492379530C00C05B67 /* ProductDataStore.swift */; };
@@ -57,6 +58,7 @@
 		163825312376A3BB00BAEA73 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		163825332376A46200BAEA73 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		163825352376A4A900BAEA73 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		163A31B6238BAF02002FA253 /* ChageRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChageRecord.swift; sourceTree = "<group>"; };
 		16BFD44523794EA500C05B67 /* NetworkConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConnection.swift; sourceTree = "<group>"; };
 		16BFD44723794F6D00C05B67 /* NetworkPool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkPool.swift; sourceTree = "<group>"; };
 		16BFD4492379530C00C05B67 /* ProductDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDataStore.swift; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 			children = (
 				163825312376A3BB00BAEA73 /* Utils.swift */,
 				163825352376A4A900BAEA73 /* Logger.swift */,
+				163A31B6238BAF02002FA253 /* ChageRecord.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -364,6 +367,7 @@
 				16BFD44823794F6D00C05B67 /* NetworkPool.swift in Sources */,
 				16BFD44A2379530C00C05B67 /* ProductDataStore.swift in Sources */,
 				163825322376A3BB00BAEA73 /* Utils.swift in Sources */,
+				163A31B7238BAF02002FA253 /* ChageRecord.swift in Sources */,
 				16E24CD52376845F007B24A6 /* ViewController.swift in Sources */,
 				16E24CD12376845F007B24A6 /* AppDelegate.swift in Sources */,
 				163825362376A4A900BAEA73 /* Logger.swift in Sources */,

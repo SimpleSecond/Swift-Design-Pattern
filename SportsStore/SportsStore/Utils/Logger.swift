@@ -45,7 +45,18 @@ class Logger<T> where T:NSObject, T:NSCopying {
 }
 
 let productLogger = Logger<Product>.init(callback: { (product) in
-    print("Change: \(product.name) \(product.stockLevel) items in stock")
+    //print("Change: \(product.name) \(product.stockLevel) items in stock")
+    var builder = ChangeRecordBuilder.init()
+    builder.productName = product.name
+    builder.category = product.category
+    builder.value = String.init(format: "%d", product.stockLevel)
+    builder.outerTag = "stockChange"
+    
+    var changeRecord = builder.changeRecord
+    if changeRecord != nil {
+        print(builder.changeRecord?.description as Any)
+    }
+    
 })
 
 

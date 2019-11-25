@@ -11,7 +11,7 @@ import Foundation
 final class NetworkPool {
     
     private let connectionCount = 3
-    private var connections = [NetworkConnection]()
+    private var connections = [NetworkConnection].init()
     private var semaphore: DispatchSemaphore
     private var queue: DispatchQueue
     
