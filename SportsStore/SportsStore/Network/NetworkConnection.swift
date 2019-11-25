@@ -16,7 +16,7 @@ class NetworkConnection {
     ]
     
     func getStockLevel(name: String) -> Int? {
-        Thread.sleep(forTimeInterval: 200.0)
+        Thread.sleep(forTimeInterval: 10.0)
         return stockData[name]
     }
     

@@ -23,8 +23,11 @@ final class NetworkPool {
         queue = DispatchQueue.init(label: "networkpoolQ")
     }
     
-    private func doGetConnection() -> NetworkConnection {
-        self.semaphore.wait(timeout: .distantFuture)
+    private func doGetConnection() -> NetworkConnection? {
+        // Semaphore信号量机制
+        guard self.semaphore.wait(timeout: .distantFuture) == .success else {
+            return nil
+        }
         var result: NetworkConnection? = nil
         self.queue.sync {
             result = self.connections.remove(at: 0)
@@ -40,7 +43,7 @@ final class NetworkPool {
     }
     
     class func getConnection() -> NetworkConnection {
-        return instance.doGetConnection()
+        return instance.doGetConnection()!
     }
     
     class func returnConnection(conn: NetworkConnection) {

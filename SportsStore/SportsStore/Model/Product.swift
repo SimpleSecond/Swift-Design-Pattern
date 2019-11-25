@@ -41,4 +41,25 @@ class Product: NSObject, NSCopying {
         return Product.init(name: self.name, description: self.description, category: self.category, price: self.price, stockLevel: self.stockLevel)
     }
 
+    class func createPoduct(name: String, description: String, category: String, price: Double, stockLevel: Int) -> Product {
+        return Product.init(name: name, description: description, category: category, price: price, stockLevel: stockLevel)
+    }
+}
+
+class ProductComposite: Product {
+    private let products: [Product]
+    
+    override init(name: String, description: String, category: String, price: Double, stockLevel: Int) {
+        fatalError("Not implemented")
+    }
+    
+    init(name: String, description: String, category: String, stockLevel: Int, products: Product...) {
+        self.products = products
+        super.init(name: name, description: description, category: category, price: 0, stockLevel: stockLevel)
+    }
+    
+    override var price: Double {
+        get { return self.products.reduce(0.0) { (total, p) -> Double in return total + p.price; } }
+        set {}
+    }
 }
